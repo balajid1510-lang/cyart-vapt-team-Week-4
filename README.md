@@ -1,5 +1,5 @@
 # cyart-vapt-team-Week-4
-cyart-vapt-team — Week 4 README
+cyart-vapt-team — Week 4 
 
 Important: Everything in this repository documents lab-only activities performed in isolated, permissioned environments (VulnHub / TryHackMe / HackTheBox). Do NOT run anything in production or against systems you do not own or have explicit written permission to test.
 
@@ -7,17 +7,17 @@ Overview
 
 This folder contains deliverables for Week 4 of the VAPT engagement exercises. It includes evidence, reports, checklists, and high-level reproduction steps for the following labs:
 
-Advanced Exploitation Lab
+1.Advanced Exploitation Lab
 
-API Security Testing Lab
+2.API Security Testing Lab
 
-Privilege Escalation & Persistence Lab
+3.Privilege Escalation & Persistence Lab
 
-Network Protocol Attacks Lab
+4.Network Protocol Attacks Lab
 
-Mobile Application Testing Lab
+5.Mobile Application Testing Lab
 
-Capstone: Full VAPT Engagement
+6.Capstone: Full VAPT Engagement
 
 Each lab entry contains a Conceptual Test Log, non-destructive reproduction notes, evidence (screenshots, pcaps, logs), and remediation recommendations. All exploit code, PoCs, or destructive scripts must remain in a private area and must not be published publicly.
 
