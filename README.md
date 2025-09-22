@@ -31,46 +31,6 @@ Only authorized lab VMs (VulnHub/THM/HTB with valid access) were used.
 
 Any sensitive artifacts (exploits/PoCs) are stored in the private/ folder (access-restricted) if applicable.
 
-Repo structure (Week 4)
-cyart-vapt-team Week_4/
-└── tasks
-    ├── 1.Advanced-Exploitation-Lab/
-    │   ├── exploit-chain-log.md
-    │   ├── custom-poc-summary.md
-    │   ├── rop-bypass-summary.md
-    │   ├── screenshots/
-    │   └── Critical-WordPress-Exploit-Chain-Report.pdf
-    ├── 2.API-Security-Testing-Lab/
-    │   ├── api-test-log.md
-    │   ├── api-test-summary.md
-    │   ├── checklist.md
-    │   ├── screenshots/
-    │   └── API-Security-Testing-Report.pdf
-    ├── 3.Privilege-Escalation-and-Persistence-Lab/
-    │   ├── escalation-log.md
-    │   ├── persistence-summary.md
-    │   ├── checklist.md
-    │   ├── screenshots/
-    │   └── Privilege-Escalation-Report.pdf
-    ├── 4.Network-Protocol-Attacks-Lab/
-    │   ├── attack-simulation-log.md
-    │   ├── mitm-summary.md
-    │   ├── checklist.md
-    │   ├── screenshots/
-    │   └── Network-Protocol-Attacks-Report.pdf
-    ├── 5.Mobile-Application-Testing-Lab/
-    │   ├── static-analysis-log.md
-    │   ├── dynamic-testing-summary.md
-    │   ├── checklist.md
-    │   ├── screenshots/
-    │   └── Mobile-App-Testing-Report.pdf
-    ├── 6.Capstone-Full-VAPT-Engagement/
-    │   ├── engagement-log.md
-    │   ├── ptes-report.pdf
-    │   ├── non-technical-summary.md
-    │   ├── screenshots/
-    │   └── Capstone-Checklists.md
-    └── README.md
 
 Note: Keep private/ folder non-public. Do not include raw exploit code in public folders.
 
