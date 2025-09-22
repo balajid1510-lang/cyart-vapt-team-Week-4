@@ -1,0 +1,43 @@
+Network Protocol Attacks Lab – TryHackMe VM
+
+Tools: Responder, Ettercap, Wireshark
+Scope: Perform network protocol attacks, capture credentials, and analyze traffic
+
+Attack Log
+Attack ID	Technique	Target IP	Status	Outcome
+015	SMB Relay	192.168.1.200	Success	NTLM Hash
+Practical Steps Documented
+
+1. SMB Relay Attack with Responder:
+
+Launched Responder to poison LLMNR/NBT-NS requests on the network.
+
+Captured NTLM authentication hashes from the target during SMB requests.
+
+Successfully intercepted hashes which could be used for offline cracking.
+
+2. Man-in-the-Middle (MitM) Attack with Ettercap:
+
+Conducted ARP spoofing to position as a MitM between target and gateway.
+
+Intercepted traffic, including credentials and session tokens, for analysis.
+
+3. Traffic Analysis with Wireshark:
+
+Captured packets from the network during the MitM session.
+
+Filtered for SMB, HTTP, and DNS traffic to identify sensitive data leaks.
+
+Checklist for Lab Report
+
+Capture NTLM hashes using Responder and document captured credentials.
+
+Perform ARP spoofing with Ettercap to intercept traffic.
+
+Analyze intercepted traffic with Wireshark to find unencrypted information.
+
+Note all commands and outcomes, including screenshots of captured hashes and traffic.
+
+Summary (50 words)
+
+Executed a network protocol attack on a TryHackMe VM. Used Responder to perform an SMB relay attack and captured NTLM hashes. Conducted ARP spoofing with Ettercap for a MitM attack and intercepted network traffic. Analyzed packets in Wireshark, demonstrating protocol vulnerabilities and credential exposure in an unprotected network environment.
