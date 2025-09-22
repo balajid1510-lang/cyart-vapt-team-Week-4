@@ -1,0 +1,63 @@
+Capstone Project: Full VAPT Engagement
+
+Tools: Kali Linux, Metasploit, OpenVAS, Burp Suite, Google Docs
+Scope: Conduct a full Vulnerability Assessment and Penetration Test (VAPT) on a HackTheBox VM, simulate exploitation, and provide remediation recommendations
+
+Pentest Log
+Timestamp	Target IP	Vulnerability	PTES Phase
+2025-08-30 15:00:00	192.168.1.200	VSFTPD RCE	Exploitation
+Practical Steps Documented
+
+1. Reconnaissance and Scanning:
+
+Conducted network and service discovery using Nmap.
+
+Identified FTP (vsftpd 2.3.4), HTTP, and other open services.
+
+Scanned with OpenVAS to detect known vulnerabilities and assign CVSS scores.
+
+2. Exploitation:
+
+Exploited VSFTPD 2.3.4 backdoor using Metasploit (exploit/unix/ftp/vsftpd_234_backdoor).
+
+Gained remote shell access on the target VM.
+
+Tested API endpoints using Burp Suite to check for security misconfigurations.
+
+3. Remediation Recommendations:
+
+Patch vulnerable services (upgrade VSFTPD to latest stable version).
+
+Implement least privilege for service accounts.
+
+Enforce input validation and secure authentication mechanisms.
+
+Rescan the system with OpenVAS after remediation to ensure vulnerabilities are fixed.
+
+4. Reporting:
+
+Documented attack timeline with commands used, payloads, and screenshots.
+
+Summarized findings and provided actionable remediation steps.
+
+Created non-technical summary for stakeholders highlighting risks and mitigation strategies.
+
+Checklist for Lab Report
+
+Perform network discovery and vulnerability scanning.
+
+Exploit critical vulnerabilities using Metasploit and document results.
+
+Test web/API endpoints for misconfigurations or insecure flows using Burp Suite.
+
+Recommend remediation measures and verify fixes with OpenVAS rescan.
+
+Include screenshots, command outputs, and PTES-aligned reporting sections.
+
+Executive Summary (Example, 300 words)
+
+The objective of this engagement was to simulate a full VAPT on the HackTheBox Lame VM to identify vulnerabilities, exploit weaknesses, and recommend mitigation strategies. The assessment followed the PTES methodology, including reconnaissance, scanning, exploitation, and reporting. Network enumeration revealed open services such as FTP (VSFTPD 2.3.4) and HTTP. Using OpenVAS, multiple vulnerabilities were detected, with VSFTPD RCE flagged as critical. Exploitation with Metasploit successfully provided a remote shell on the target. Additional testing of HTTP endpoints with Burp Suite identified minor misconfigurations in API authentication. Remediation recommendations include patching VSFTPD, applying least privilege policies, and enforcing input validation. A follow-up scan confirmed closure of critical vulnerabilities. The exercise highlights the importance of structured testing, continuous monitoring, and timely patching to maintain system security.
+
+Stakeholder Summary (Example, 150 words)
+
+During the security assessment of the target system, critical vulnerabilities were identified, including a backdoor in the FTP service that allowed unauthorized access. Testing simulated real-world attack scenarios, demonstrating how attackers could exploit these weaknesses. Recommendations include updating outdated services, applying strict access controls, and validating all inputs to prevent exploitation. Once the recommended measures were applied, systems were rescanned, and vulnerabilities were mitigated. This engagement emphasizes proactive security management to protect sensitive data and reduce business risk.
