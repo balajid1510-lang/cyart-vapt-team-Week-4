@@ -1,0 +1,25 @@
+Checklist for documentation:
+
+Enumerate all endpoints tested.
+
+Describe testing approach for each vulnerability.
+
+Include screenshots of Burp Suite / Postman where vulnerabilities were found.
+
+Summarize vulnerabilities with:
+
+Severity (Critical / High)
+
+Affected endpoint
+
+How the vulnerability can be exploited
+
+Provide remediation advice:
+
+BOLA → Implement proper access control checks
+
+GraphQL → Sanitize inputs, validate query depth, and use query whitelisting
+
+Example Summary (50 words):
+
+Tested DVWA APIs for OWASP API Top 10 vulnerabilities. Discovered critical BOLA on /api/users allowing unauthorized access to other user data. High-risk GraphQL injection found on /graphql permitting data exposure. Manual testing with Burp Suite and Postman confirmed the issues, highlighting the need for strict access control and input validation.
