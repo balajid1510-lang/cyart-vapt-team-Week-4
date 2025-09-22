@@ -1,0 +1,45 @@
+Mobile Application Testing Lab
+
+Tools: MobSF, Frida, Drozer
+Scope: Analyze Android APKs for vulnerabilities, perform dynamic testing, and document findings
+
+Test Log
+Test ID	Vulnerability	Severity	Target App
+016	Insecure Storage	High	test.apk
+Practical Steps Documented
+
+1. Static Analysis with MobSF:
+
+Imported test.apk into MobSF.
+
+Analyzed for insecure storage issues, including hardcoded credentials, unencrypted SharedPreferences, and insecure SQLite databases.
+
+Documented findings in MobSF report, highlighting high-risk insecure storage.
+
+2. Dynamic Testing with Frida:
+
+Hooked app functions to intercept sensitive data and bypass authentication.
+
+Used Frida scripts to override login checks, demonstrating ability to manipulate runtime behavior.
+
+Observed application behavior and recorded function calls for reporting.
+
+3. Inter-Process Communication (IPC) Testing with Drozer:
+
+Tested app components for exported activities, services, and content providers.
+
+Verified whether IPC endpoints allowed unauthorized access or data leakage.
+
+Checklist for Lab Report
+
+Run MobSF for static APK analysis and document findings.
+
+Hook functions with Frida to bypass authentication or intercept sensitive calls.
+
+Test IPC endpoints using Drozer to find potential exposure.
+
+Include screenshots, commands, and results for reproducibility.
+
+Summary (50 words)
+
+Performed mobile application testing on test.apk. Static analysis with MobSF revealed high-risk insecure storage vulnerabilities. Dynamic testing using Frida allowed hooking of authentication functions to bypass login. Drozer was used to test IPC endpoints for unauthorized access. Findings highlight the importance of secure storage and proper component protection in Android apps.
